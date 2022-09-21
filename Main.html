@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos de etiquetas</title>
+</head>
+<body>
+    <h1>Etiquetas Para Estructurar</h1>
+    <ol>
+        <li>Etiquetas h1, h2, h3</li>
+        <li>Etiquetas aside</li>
+    </ol>
+
+    <p>Ambas contienen los siguientes atributos globales:</p>
+
+    <h1 title="h1">title: título del elemento (manten el cursor en el texto). </h1>
+    <h2 style="color:red ;">style: Permite especificar información de estilo</h2>
+    <h3 draggable="true">draggable: Especifica si el elemento se puede arrastrar o no</h3>
+
+    <h1>Etiquetas Para Agrupacion</h1>
+
+    <h2>ol: </h2>
+    <p>atributo "reversed": Cuenta de forma descendente la lista</p>
+
+    <ol reversed>
+        <li>hola</li>
+        <li>hola</li>
+        <li>hola</li>
+    </ol>
+
+    <p>atributo "start": un numero que especifica desde donde empieza el primer item</p>
+
+    <ol start="14">
+        <li>hola</li>
+        <li>hola</li>
+        <li>hola</li>
+    </ol>
+
+    <p>atributo "type": El tipo de numeracion que sigue la lista</p>
+
+    <ol type="I">
+        <li>hola</li>
+        <li>hola</li>
+        <li>hola</li>
+    </ol>
+
+    <h2>blockquote: </h2>
+    <p>atributo "cite": le da un URL a la cita</p>
+
+    <blockquote cite="http://es.wikipedia.org/wiki/Totalitarismo">
+
+        <p>Se conoce como totalitarismos a las ideologías, los movimientos y los regímenes políticos donde la libertad está seriamente restringida y el Estado ejerce todo el poder sin divisiones ni restricciones.</p>
+      
+      </blockquote>
+
+
+      <h1>Etiquetas semanticas</h1>
+      <h2>a: </h2>
+
+      <p>etiqueta "href:la direccion del recurso</p>
+      <p>Vínculo : <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a></p>
+
+      <p>etiqueta "target": abre el recurso en una nueva ventana</p>
+      <p>Vínculo : <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank" >Wikipedia</a></p>
+
+      <p>etiqueta "download": indica si el recurso deberia ser descargado en la maquina del ususario</p>
+      <p>Descarga : <a href="/" download="secondhtml.html" >Haz click</a></p>
+
+      <h2>cite: </h2>
+
+      <p title="h1">title: título del elemento (manten el cursor en el texto). </p>
+      <p style="color:red ;">style: Permite especificar información de estilo</p>
+      <p draggable="true">draggable: Especifica si el elemento se puede arrastrar o no</p>
+
+
+      <h1>Etiquetas para incrustar contenido</h1>
+
+    
+      <h2>img: </h2>
+
+      <p>etiqueta "height" y "width": Un número de píxeles que indica el tamano que la imagen tomará cuando sea incrustada en el documento.</p>
+      <p>etiqueta "source": la ubicacion del archivo</p>
+      <img src="img/img1.jpg" height="300" width="300">
+      
+      <h2>video: </h2>
+
+      <p>etiqueta "height" y "width": Un número de píxeles que indica el tamano que el video tomará cuando sea incrustada en el documento.</p>
+      <p>etiqueta "source": la ubicacion del archivo</p>
+      <p>etiqueta "controls": indica al navegador una interfaz para controlar el video</p>
+      <video src="video/Video1.mp4" height="300" width="300" controls></video>
+
+
+      <h1>Etiquetas para tablas</h1>
+
+      <h2>th y td: </h2>
+
+      <p>atributo "colspan: El número de celdas hacia la derecha que esta celda debería abarcar </p>
+
+      <table border="1" class="default">
+
+        <tr>
+      
+          <th colspan="2">Encabezado 1</th>
+      
+        </tr>
+      
+        <tr>
+      
+          <td>Celda 1</td>
+      
+          <td>Celda 2</td>
+      
+        </tr>
+      
+      </table>
+
+      <p>etiqueta "rowspan": El número de celdas hacia abajo que esta celda debería abarcar.</p>
+      <table border="1" class="default">
+
+        <tr>
+      
+          <th rowspan="2">Encabezado 1</th>
+      
+          <td>Celda 2</td>
+      
+        </tr>
+      
+        <tr>
+      
+          <td>Celda 3</td>
+      
+        </tr>
+      
+      </table>
+
+      <h1>Eiquetas para formularios </h1>
+      <h2>label e input: </h2>
+    
+      <p>atributo "for": Un identificador que coincide con el valor del atributo id del control con el que esta etiqueta está asociada. </p>
+      <label for="Name" accesskey="r"> form</label>
+      <input type="text" id="Name" name="Name" />
+  
+      <input type="submit" value="enviar ">
+  </body>
+  </html>
+</body>
+</html>
